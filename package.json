@@ -1,0 +1,9 @@
+{
+  "name": "lc-app",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "npm install --prefix client --include=dev && npm run build --prefix client && npm install --prefix server",
+    "start": "node server/server.js"
+  }
+}
